@@ -7,10 +7,10 @@ on:
   workflow_dispatch:
 
 env:
-  AWS_REGION: ${{ vars.AWS_REGION }}
-  S3_BUCKET: ${{ vars.S3_BUCKET }}
-  CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
-  VITE_API_URL: ${{ vars.VITE_API_URL }}
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  S3_BUCKET: ${{ secrets.S3_BUCKET }}
+  CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+  VITE_API_URL: ${{ secrets.VITE_API_URL }}
 
 jobs:
   deploy:

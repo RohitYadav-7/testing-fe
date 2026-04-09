@@ -31,14 +31,11 @@ This repo includes GitHub Actions workflow:
 
 Set these in GitHub repository settings before running workflow:
 
-Repository Variables:
-
-- `AWS_REGION` (example: `ap-south-1`)
-- `S3_BUCKET` (example: `testing-fe-rohit`)
-- `CLOUDFRONT_DISTRIBUTION_ID`
-- `VITE_API_URL` (your backend URL)
-
 Repository Secrets:
 
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
+- `AWS_REGION` (example: `ap-south-1`)
+- `S3_BUCKET` (example: `testing-fe-rohit`)
+- `CLOUDFRONT_DISTRIBUTION_ID`
+- `VITE_API_URL` (your backend URL)
