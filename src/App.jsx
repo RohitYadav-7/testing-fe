@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const RAW_API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = RAW_API_URL.replace(/\/+$/, "");
 
 function App() {
   const [status, setStatus] = useState("Loading...");
